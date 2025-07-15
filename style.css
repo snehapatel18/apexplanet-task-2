@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1.2rem;
+  background-color: #0078D7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* To-do List styles */
+.todo-container {
+  margin-top: 2rem;
+}
+
+.todo-container input {
+  width: 70%;
+  padding: 0.5rem;
+  margin-right: 5px;
+}
+
+.todo-container button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+#todoList li {
+  background: #e6f2ff;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
